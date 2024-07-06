@@ -86,11 +86,14 @@ h2 {
     transition: .3s;
     position: relative;
     transform-origin: center center;
+    width: 250px;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
 }
 
 .card:hover {
@@ -106,13 +109,15 @@ h2 {
 }
 
 .card .esconder {
+    font-size: 0.75em;
     font-weight: normal;
-    font-size: 0;
+    max-height: 0;
+    overflow: hidden;
     transition: .3s;
 }
 
 .card:hover .esconder {
-    font-size: initial;
+    max-height: 2.5em;
 }
 
 #escurecer {
@@ -120,7 +125,7 @@ h2 {
     inset: 0;
     z-index: 1000;
     position: fixed;
-    transition: 0.3s;
+    transition: .3s;
     pointer-events: none;
 }
 
