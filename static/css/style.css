@@ -90,8 +90,7 @@ h2 {
     transition: .3s;
     position: relative;
     transform-origin: center center;
-    width: 250px;
-    height: 250px;
+    aspect-ratio: 1/1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,4 +156,29 @@ body:has(.card:hover) #escurecer {
 .referencias span {
     display: block;
     margin-block: 1em;
+    overflow-wrap: break-word;
+    /* word-break: break-all; */
+    /* max-width: 100%;
+    display: inline-block; */
+}
+
+@media (max-width: 1400px) {
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1160px) {
+    .secao {
+        margin: 2em 8em;
+    }
+    #cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 740px) {
+    .secao {
+        margin: 2em 4em;
+    }
 }
