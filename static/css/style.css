@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     text-align: justify;
@@ -132,4 +136,25 @@ h2 {
 body:has(.card:hover) #escurecer {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ref {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.ref:hover {
+    background-color: black;
+    color: white;
+}
+
+.referencias {
+    text-align: left;
+}
+
+.referencias span {
+    display: block;
+    margin-block: 1em;
 }
