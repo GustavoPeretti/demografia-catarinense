@@ -157,9 +157,6 @@ body:has(.card:hover) #escurecer {
     display: block;
     margin-block: 1em;
     overflow-wrap: break-word;
-    /* word-break: break-all; */
-    /* max-width: 100%;
-    display: inline-block; */
 }
 
 @media (max-width: 1400px) {
