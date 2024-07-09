@@ -159,6 +159,69 @@ body:has(.card:hover) #escurecer {
     overflow-wrap: break-word;
 }
 
+.header-return span {
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Rowdies', sans-serif;
+    background-color: rgb(195, 195, 195);
+    padding: 2em 1em;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.header-content span {
+    background-color: rgb(56, 63, 105);
+    color: white;
+    padding: 0.2em;
+    font-size: 3em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.conceito > * {
+    margin: 1em 0;
+}
+
+.definicao {
+    padding: 1em;
+    border-left: solid #695D37 2px;
+    background-color: rgba(211, 202, 171, 0.75);
+}
+
+.matematica {
+    padding: 1em;
+    border-right: solid #383f69 2px;
+    background-color: rgba(139, 147, 193, 0.75);
+    text-align: right;
+}
+
+.dado-sc section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.dado-sc section img {
+    width: 30%;
+    filter: brightness(0);
+}
+
+.dado-sc section p {
+    font-size: 1.5em;
+    text-align: center;
+    text-indent: 0;
+    border: 2px black solid;
+    padding: 1em;
+}
+
 @media (max-width: 1400px) {
     #cards {
         grid-template-columns: repeat(2, 1fr);
@@ -177,5 +240,33 @@ body:has(.card:hover) #escurecer {
 @media (max-width: 740px) {
     .secao {
         margin: 2em 4em;
+    }
+
+    .dado-sc section p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 680px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        margin: 2em;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-return {
+        margin: 2em;
+    }
+
+    .header-content h1 {
+        word-break: break-all;
+    }
+
+    .dado-sc section p {
+        font-size: 0.6  em;
     }
 }
