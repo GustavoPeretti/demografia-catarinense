@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demografia Catarinense</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="header-return secao">
+            <span onclick="window.history.back()" class="material-symbols-outlined">chevron_left</span>
+        </div>
+        <div class="header-content secao">
+            <span class="material-symbols-outlined">pregnancy</span>
+            <h1>Taxa de fecundidade</h1>
+        </div>
+    </header>
+    <main>
+        <article class="secao conceito">
+            <h2>Definição</h2>
+            <div class="definicao">
+                <p><i>A taxa de fecundidade determina o número médio de filhos nascidos vivos tidos por mulheres até o fim do seu período reprodutivo, entre 15 e 49 anos <a class="ref" href="#ref-1">(IBGE, 2013)</a>.</i></p>
+            </div>
+            <div class="matematica">
+                <p><i>\( \text{Tf} = \frac{\text{nº de nasc. vivos} \times 1000}{\text{nº de mulheres em PR}} \)</i></p>
+            </div>
+        </article>
+        <article class="secao dado-sc">
+            <h2>Santa Catarina - 2021</h2>
+            <section>
+                <img src="static/img/sc.png" alt="">
+                <p>1,66 filho por mulher <a class="ref" href="#ref-2">(DIVE, 2024)</a></p>
+            </section>
+        </article>
+        <article class="secao referencias">
+            <h2>Referências</h2>
+            <span id="ref-1">IBGE. <b>Atlas do censo demográfico 2010</b>: Glossário. Rio de Janeiro: IBGE, 2013, p. 209-213. Disponível em: &lt<a href="https://censo2010.ibge.gov.br/apps/atlas/pdf/209_213_Glossario_ATLASDEMO%202010.pdf">https://censo2010.ibge.gov.br/apps/atlas/pdf/209_213_Glossario_ATLASDEMO%202010.pdf</a>&gt. Acesso em: 02 jul. 2024.</span>
+            <span id="ref-2">Diretoria de Vigilância Epidemiológica (DIVE). <b>Informativo Epidemiológico “Barriga Verde”</b>. Gerência de Análises Epidemiológicas e Doenças e Agravos não Transmissíveis (GADNT), 2024. Disponível em: &lt<a href="https://dive.sc.gov.br/phocadownload/boletim-barriga-verde/nascidos-vivos/Boletim-Barriga-Verde-Nascidos-Vivos.pdf">https://dive.sc.gov.br/phocadownload/boletim-barriga-verde/nascidos-vivos/Boletim-Barriga-Verde-Nascidos-Vivos.pdf</a>&gt. Acesso em: 27 jun. 2024.</span>
+        </article>
+    </main>
+    <div id="escurecer"></div>  
+    <script src="static/js/script.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+</body>
+</html>
