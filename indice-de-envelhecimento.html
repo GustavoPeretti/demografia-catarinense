@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demografia Catarinense</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="header-return secao">
+            <span onclick="window.history.back()" class="material-symbols-outlined">chevron_left</span>
+        </div>
+        <div class="header-content secao">
+            <span class="material-symbols-outlined">elderly_woman</span>
+            <h1>Índice de envelhecimento</h1>
+        </div>
+    </header>
+    <main>
+        <article class="secao conceito">
+            <h2>Definição</h2>
+            <div class="definicao">
+                <p><i>O índice de envelhecimento (IE) pode ser encontrado efetuando a razão entre o número de idosos (65 anos ou mais) e o número de jovens (0 a 14 anos de idade), multiplicado por 100 <a href="#ref-1" class="ref">(IBGE, 2023)</a>.</i></p>
+            </div>
+            <div class="matematica">
+                <p><i>\( \text{IE} = \frac{\text{nº idosos} }{\text{nº jovens}}\times 100 \)</i></p>
+            </div>
+        </article>
+        <article class="secao dado-sc">
+            <h2>Santa Catarina - 2022</h2>
+            <section>
+                <img src="static/img/sc.png" alt="">
+                <p>83,2 habitantes <a class="ref" href="#ref-1">(IBGE, 2023)</a></p>
+            </section>
+        </article>
+        <article class="secao referencias">
+            <h2>Referências</h2>
+            <span id="ref-1">IBGE, <b>Censo Brasileiro de 2022</b>. População por idade e sexo. Rio de Janeiro: IBGE, 2023. Disponível em: &lt<a href="https://biblioteca.ibge.gov.br/visualizacao/livros/liv102038.pdf">https://biblioteca.ibge.gov.br/visualizacao/livros/liv102038.pdf</a>&gt. Acesso em: 01 jul. 2024.            
+        </article>
+    </main>
+    <div id="escurecer"></div>  
+    <script src="static/js/script.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+</body>
+</html>
