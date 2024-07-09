@@ -27,5 +27,18 @@ window.onload = () => {
 };
 
 document.querySelectorAll('.ref').forEach(e => {
-    e.onclick = onhashchange
+    e.onclick = onhashchange;
 });
+
+document.onscroll = () => {
+    if (scrollY > document.documentElement.clientHeight) {
+        document.querySelector('nav').style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+        document.querySelector('nav').style.boxShadow = 'rgba(0, 0, 0, 0.5)';
+        document.querySelectorAll('nav a').forEach(e => e.style.color = 'white');
+        return;
+    }
+    
+    document.querySelector('nav').style.backgroundColor = 'transparent';
+    document.querySelector('nav').style.boxShadow = '';
+    document.querySelectorAll('nav a').forEach(e => e.style.color = 'black');
+};
