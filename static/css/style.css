@@ -183,6 +183,7 @@ body:has(.card:hover) #escurecer {
     font-size: 3em;
     border-radius: 50%;
     cursor: pointer;
+    user-select: none;
 }
 
 .conceito > * {
@@ -235,6 +236,8 @@ nav ul {
     justify-content: space-evenly;
     list-style-type: none;
     padding: 1em;
+    position: relative;
+    transition: .3s;
 }
 
 nav ul li {
@@ -274,6 +277,14 @@ nav ul li:hover a::before {
     left: 0; 
 }
 
+nav #hamburguer {
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    display: none;
+    padding: 1em;
+}
+
 @media (max-width: 1400px) {
     #cards {
         grid-template-columns: repeat(2, 1fr);
@@ -291,7 +302,7 @@ nav ul li:hover a::before {
 
 @media (max-width: 740px) {
     .secao {
-        margin: 2em 4em;
+        margin: 2em;
     }
 
     .dado-sc section p {
@@ -319,6 +330,6 @@ nav ul li:hover a::before {
     }
 
     .dado-sc section p {
-        font-size: 0.6  em;
+        font-size: 0.6em;
     }
 }
